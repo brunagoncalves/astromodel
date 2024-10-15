@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import { configSite } from "../data/configSite";
+
+const { imgLogo, altLogo, heightLogo, widthLogo } = configSite;
+const { src } = Astro.props;
+---
+
+<a href="/" class="navbar-brand block">
+  {
+    src || imgLogo ? (
+      <Image
+        width={widthLogo * 2}
+        height={heightLogo * 2}
+        src={src || imgLogo}
+        alt={altLogo}
+        style={{
+          height: `${heightLogo}px`,
+          width: `${widthLogo}px`,
+        }}
+      />
+    ) : (
+      altLogo
+    )
+  }
+</a>

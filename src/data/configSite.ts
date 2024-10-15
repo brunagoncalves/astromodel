@@ -3,8 +3,8 @@ export const configSite: ConfigSiteTypes = {
   description: "Description WebSite",
   author: "Author",
   favicon: "favicon.ico",
-  imgLogo: "src/assets/images/logo.svg",
-  altLogo: "Logo AstroModel",
+  imgLogo: "/src/assets/images/logo.svg",
+  altLogo: "AstroModel",
   widthLogo: 144,
   heightLogo: 37,
 };
