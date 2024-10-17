@@ -3,8 +3,35 @@ import Navbar from "@/components/partials/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="AstroModel">
   <main>
-    <Navbar />
+      <Navbar />
+      <div class="bg-[url('src/assets/images/hero.png')] bg-cover bg-center h-screen flex flex-col items-center justify-center">
+        <h1 class="max-w-2xl text-[5rem] font-bold">Make your interior more minimalistic & modern</h1>
+        <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+        <input type="text">
+      </div>
+
+      <div class="md:flex items-center justify-center gap-7 p-4">
+        <h2 class="font-bold">Why Choosing Us</h2>
+
+        <div>
+          <h3 class="font-bold text-2xl">Luxury facilities</h3>
+          <p class="py-5">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+          <a href="#">More Info</a>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-2xl">Luxury facilities</h3>
+          <p class="py-5">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+          <a href="#">More Info</a>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-2xl">Luxury facilities</h3>
+          <p class="py-5">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
   </main>
 </Layout>
